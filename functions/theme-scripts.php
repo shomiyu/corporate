@@ -27,7 +27,8 @@ function add_files() {
         wp_script('project-js', '/src/js/main.js');
         wp_css('project-reset-css', '/src/css/reset.css');
         wp_css('project-base-css', '/src/css/base.css');
-        wp_css('project-main-css', '/src/css/main.css');
+        wp_css('project-common-css', '/src/css/common.css');
+        wp_css('project-index-css', '/src/css/index.css');
         wp_css('style', '/style.css');
         wp_web_font();
     }
