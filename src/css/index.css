@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* ==================================
+  TOPページのスタイル
+================================== */
+.main-visual {
+  position: relative;
+}
+
+.main-visual-copy {
+  font-size: 2em;
+  position: absolute;
+  bottom: 1em;
+  right: 3em;
+}

@@ -31,6 +31,16 @@
     </div>
   </header>
 
+  <main class="main">
+    <div class="main-visual">
+      <picture>
+        <source srcset="http://placehold.jp/375x500.png" media="(max-width: 767px)">
+        <img src="http://placehold.jp/1440x436.png" alt="">
+      </picture>
+      <p class="main-visual-copy">キャッチコピー</p>
+    </div>
+  </main>
+
   <?php wp_footer(); ?>
 </body>
 </html>
