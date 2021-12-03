@@ -50,3 +50,10 @@
 .menu-item a:hover::after {
   width: 100%;
 }
+
+/*
+  main settings
+---------------------------------- */
+.main {
+  padding-top: 64px;
+}
