@@ -8,4 +8,45 @@
 .header {
   padding: 8px 0;
   background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1040px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  position: relative;
+}
+
+.menu-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.3s all ease-in-out;
+}
+
+.menu-item a:hover::after {
+  width: 100%;
 }
