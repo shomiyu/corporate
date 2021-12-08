@@ -59,3 +59,14 @@
 .main {
   padding-top: 64px;
 }
+
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}

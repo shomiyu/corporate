@@ -39,6 +39,47 @@
       </picture>
       <p class="main-visual-copy">キャッチコピー</p>
     </div>
+
+    <section class="secondary-section">
+      <div class="container">
+        <h2 class="heading-center">サンプル法律事務所 3つの特長</h2>
+        <ul class="row">
+          <li class="feature-item">
+            <section class="feature-item-inner">
+              <div>
+                <h3 class="feature-item-title">交通事故の実績多数</h3>
+                <p>被害に遭われた方が泣き寝入りをしないために専門知識と交渉技術を持って正当な損害賠償額を勝ち取ります。</p>
+              </div>
+              <figure class="feature-item-image">
+                <img src="http://placehold.jp/80x80.png" alt="">
+              </figure>
+            </section>
+          </li>
+          <li class="feature-item">
+            <section class="feature-item-inner">
+              <div>
+                <h3 class="feature-item-title">専門家と共同しスピード解決</h3>
+                <p>医師・税理士・公認会計士・司法書士など、各分野の専門家と共同し、スピーディーに解決へと導きます。</p>
+              </div>
+              <figure class="feature-item-image">
+                <img src="http://placehold.jp/80x80.png" alt="">
+              </figure>
+            </section>
+          </li>
+          <li class="feature-item">
+            <section class="feature-item-inner">
+              <div>
+                <h3 class="feature-item-title">明朗な料金の提示と丁寧な説明</h3>
+                <p>事前に料金を提示し、納得していただいた上で案件を進めています。まずはお気軽にご相談ください。</p>
+              </div>
+              <figure class="feature-item-image">
+                <img src="http://placehold.jp/80x80.png" alt="">
+              </figure>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <?php wp_footer(); ?>
