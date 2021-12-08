@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.main-visual img {
+  width: 100%;
+}
+
 .main-visual-copy {
   font-size: 2em;
   position: absolute;
