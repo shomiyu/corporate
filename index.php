@@ -85,7 +85,12 @@
       <div class="heading-parallax heading-parallax--hammer">
         <h2 class="heading-parallax-text">取扱業務</h2>
       </div>
-      <p>テキスト</p>
+
+      <section>
+        <div class="container">
+          <h3 class="heading-primary">個人のお客様</h3>
+        </div>
+      </section>
     </section>
 
     <section>
