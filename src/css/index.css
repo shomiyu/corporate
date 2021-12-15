@@ -3,6 +3,39 @@
 /* ==================================
   TOPページのスタイル
 ================================== */
+/* TOPページ共通 */
+.heading-parallax {
+  height: 240px;
+  position: relative;
+}
+
+.heading-parallax::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.heading-parallax--hammer::before {
+  background-image: url("/wp-content/themes/corporate/src/img/hammer-620011_1920_small.jpeg");
+}
+
+.heading-parallax--column::before {
+  background-image: url("/wp-content/themes/corporate/src/img/column-731199_1920.jpeg");
+}
+
+.heading-parallax-text {
+  color: #fff;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* main visual */
 .main-visual {
   position: relative;
 }

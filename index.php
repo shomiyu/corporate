@@ -80,6 +80,20 @@
         </ul>
       </div>
     </section>
+
+    <section>
+      <div class="heading-parallax heading-parallax--hammer">
+        <h2 class="heading-parallax-text">取扱業務</h2>
+      </div>
+      <p>テキスト</p>
+    </section>
+
+    <section>
+      <div class="heading-parallax heading-parallax--column">
+        <h2 class="heading-parallax-text">コラム</h2>
+      </div>
+      <p>テキスト</p>
+    </section>
   </main>
 
   <?php wp_footer(); ?>
