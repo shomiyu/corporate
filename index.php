@@ -198,7 +198,112 @@
       <div class="heading-parallax heading-parallax--column">
         <h2 class="heading-parallax-text">コラム</h2>
       </div>
-      <p>テキスト</p>
+
+      <div class="container">
+        <ol class="row column-list">
+          <li class="column-list-item">
+            <a href="#!" class="column-list-link">
+              <section class="column-list-inner">
+                <div class="column-list-text-box">
+                  <h3>元号の使用は法的に問題ない？</h3>
+                  <p class="column-list-date">
+                    <time datetime="2021-12-22">2021年12月22日</time>
+                  </p>
+                  <p class="category">カテゴリー</p>
+                </div>
+                <figure class="column-list-image">
+                  <img src="http://placehold.jp/300x185.png" alt="">
+                </figure>
+              </section>
+            </a>
+          </li>
+          <li class="column-list-item">
+            <a href="#!" class="column-list-link">
+              <section class="column-list-inner">
+                <div class="column-list-text-box">
+                  <h3>元号の使用は法的に問題ない？</h3>
+                  <p class="column-list-date">
+                    <time datetime="2021-12-22">2021年12月22日</time>
+                  </p>
+                  <p class="category">カテゴリー</p>
+                </div>
+                <figure class="column-list-image">
+                  <img src="http://placehold.jp/300x185.png" alt="">
+                </figure>
+              </section>
+            </a>
+          </li>
+          <li class="column-list-item">
+            <a href="#!" class="column-list-link">
+              <section class="column-list-inner">
+                <div class="column-list-text-box">
+                  <h3>元号の使用は法的に問題ない？</h3>
+                  <p class="column-list-date">
+                    <time datetime="2021-12-22">2021年12月22日</time>
+                  </p>
+                  <p class="category">カテゴリー</p>
+                </div>
+                <figure class="column-list-image">
+                  <img src="http://placehold.jp/300x185.png" alt="">
+                </figure>
+              </section>
+            </a>
+          </li>
+        </ol>
+        <p class="button-area">
+          <a href="#!" class="button">もっとみる</a>
+        </p>
+
+        <section>
+          <h3 class="heading-primary">お知らせ</h3>
+
+          <ol class="news-list">
+            <li class="news-list-item">
+              <a href="#!" class="news-list-link">
+                <dl class="news-list-inner">
+                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
+                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="news-list-item">
+              <a href="#!" class="news-list-link">
+                <dl class="news-list-inner">
+                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
+                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="news-list-item">
+              <a href="#!" class="news-list-link">
+                <dl class="news-list-inner">
+                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
+                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="news-list-item">
+              <a href="#!" class="news-list-link">
+                <dl class="news-list-inner">
+                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
+                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="news-list-item">
+              <a href="#!" class="news-list-link">
+                <dl class="news-list-inner">
+                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
+                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
+                </dl>
+              </a>
+            </li>
+          </ol>
+          <p class="button-area">
+            <a href="#!" class="button">もっとみる</a>
+          </p>
+        </section>
+      </div>
     </section>
   </main>
 
