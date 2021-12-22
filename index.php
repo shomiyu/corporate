@@ -139,6 +139,57 @@
               </li>
             </ul>
           </div>
+          <div class="main-body-text">
+            <h3 class="heading-primary">法人のお客様</h3>
+            <p>当事務所は、問題に直面した時やトラブルを未然に防ぎたい時に気軽に相談できるパートナーでありたいと思っています。<br>丁寧にお悩みをお聞きし、ご納得いただけるまで解決方法をご提案いたします。</p>
+            <ul class="row">
+              <li class="media-list-item">
+                <section class="media-list-text">
+                  <div>
+                    <h4 class="heading-underline">交通事故</h4>
+                    <ul class="list-arrow">
+                      <li>治療を続けても大幅な改善が見込めない「症状固定」時期のアドバイス</li>
+                      <li>後遺障害診断書のご相談（異議申立手続等も含む）</li>
+                      <li>保険会社との示談交渉、訴訟</li>
+                    </ul>
+                  </div>
+                  <figure class="media-list-image">
+                    <img src="http://placehold.jp/300x185.png" alt="">
+                  </figure>
+                </section>
+              </li>
+              <li class="media-list-item">
+                <section class="media-list-text">
+                  <div>
+                    <h4 class="heading-underline">離婚問題</h4>
+                    <ul class="list-arrow">
+                      <li>離婚の交渉・調停・訴訟</li>
+                      <li>離婚に伴う財産分与・慰謝料請求</li>
+                      <li>子どもの親権</li>
+                    </ul>
+                  </div>
+                  <figure class="media-list-image">
+                    <img src="http://placehold.jp/300x185.png" alt="">
+                  </figure>
+                </section>
+              </li>
+              <li class="media-list-item">
+                <section class="media-list-text">
+                  <div>
+                    <h4 class="heading-underline">交通事故</h4>
+                    <ul class="list-arrow">
+                      <li>治療を続けても大幅な改善が見込めない「症状固定」時期のアドバイス</li>
+                      <li>後遺障害診断書のご相談（異議申立手続等も含む）</li>
+                      <li>保険会社との示談交渉、訴訟</li>
+                    </ul>
+                  </div>
+                  <figure class="media-list-image">
+                    <img src="http://placehold.jp/300x185.png" alt="">
+                  </figure>
+                </section>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </section>
