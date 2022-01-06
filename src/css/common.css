@@ -58,7 +58,8 @@
   main settings
 ---------------------------------- */
 .main {
-  padding-top: 64px;
+  padding-top: 4em;
+  padding-bottom: 5em;
 }
 
 .container {
