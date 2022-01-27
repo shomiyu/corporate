@@ -226,51 +226,32 @@
         <section>
           <h3 class="heading-primary">お知らせ</h3>
 
-          <ol class="news-list">
-            <li class="news-list-item">
-              <a href="#!" class="news-list-link">
-                <dl class="news-list-inner">
-                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
-                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
-                </dl>
-              </a>
-            </li>
-            <li class="news-list-item">
-              <a href="#!" class="news-list-link">
-                <dl class="news-list-inner">
-                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
-                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
-                </dl>
-              </a>
-            </li>
-            <li class="news-list-item">
-              <a href="#!" class="news-list-link">
-                <dl class="news-list-inner">
-                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
-                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
-                </dl>
-              </a>
-            </li>
-            <li class="news-list-item">
-              <a href="#!" class="news-list-link">
-                <dl class="news-list-inner">
-                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
-                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
-                </dl>
-              </a>
-            </li>
-            <li class="news-list-item">
-              <a href="#!" class="news-list-link">
-                <dl class="news-list-inner">
-                  <dt class="news-list-date"><time datetime="2021-12-22">2021年12月22日</time></dt>
-                  <dd class="news-list-text">元号の使用は法的に問題ない？</dd>
-                </dl>
-              </a>
-            </li>
-          </ol>
-          <p class="button-area">
-            <a href="#!" class="button">もっとみる</a>
-          </p>
+          <?php if ( have_posts() ) : ?>
+
+            <ol class="news-list">
+              <?php query_posts('posts_per_page=5'); ?>
+              <?php while( have_posts() ) : the_post(); ?>
+                <li class="news-list-item">
+                  <a href="<?php the_permalink(); ?>" class="news-list-link">
+                    <dl class="news-list-inner">
+                      <dt class="news-list-date">
+                        <time datetime="<?php the_time( DATE_W3C ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></time>
+                      </dt>
+                      <dd class="news-list-text"><?php the_title(); ?></dd>
+                    </dl>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+            </ol>
+            <p class="button-area">
+              <a href="/news/" class="button">もっとみる</a>
+            </p>
+
+          <?php else : ?>
+
+            <p>まだ投稿がありません。</p>
+
+          <?php endif; ?>
         </section>
       </div>
     </section>
