@@ -91,13 +91,20 @@
 
 /* Column Section */
 .column-list {
-  margin-bottom: -1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -2em;
 }
 
 .column-list-item {
   list-style: none;
   width: calc((100% - 2em - 2em) / 3);
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+
+.column-list-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .column-list-link {
@@ -105,6 +112,7 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   overflow: hidden;
+  height: 100%;
 }
 
 .column-list-inner {

@@ -169,58 +169,54 @@
       </div>
 
       <div class="container">
-        <ol class="row column-list">
-          <li class="column-list-item">
-            <a href="#!" class="column-list-link">
-              <section class="column-list-inner">
-                <div class="column-list-text-box">
-                  <h3>元号の使用は法的に問題ない？</h3>
-                  <p class="column-list-date">
-                    <time datetime="2021-12-22">2021年12月22日</time>
-                  </p>
-                  <p class="category">カテゴリー</p>
-                </div>
-                <figure class="column-list-image">
-                  <img src="http://placehold.jp/300x185.png" alt="">
-                </figure>
-              </section>
-            </a>
-          </li>
-          <li class="column-list-item">
-            <a href="#!" class="column-list-link">
-              <section class="column-list-inner">
-                <div class="column-list-text-box">
-                  <h3>元号の使用は法的に問題ない？</h3>
-                  <p class="column-list-date">
-                    <time datetime="2021-12-22">2021年12月22日</time>
-                  </p>
-                  <p class="category">カテゴリー</p>
-                </div>
-                <figure class="column-list-image">
-                  <img src="http://placehold.jp/300x185.png" alt="">
-                </figure>
-              </section>
-            </a>
-          </li>
-          <li class="column-list-item">
-            <a href="#!" class="column-list-link">
-              <section class="column-list-inner">
-                <div class="column-list-text-box">
-                  <h3>元号の使用は法的に問題ない？</h3>
-                  <p class="column-list-date">
-                    <time datetime="2021-12-22">2021年12月22日</time>
-                  </p>
-                  <p class="category">カテゴリー</p>
-                </div>
-                <figure class="column-list-image">
-                  <img src="http://placehold.jp/300x185.png" alt="">
-                </figure>
-              </section>
-            </a>
-          </li>
-        </ol>
+        <!-- カスタム投稿の記事が入った配列を用意する -->
+        <?php
+          $args = [
+            'post_type' => 'column', // カスタム投稿名
+            'posts_per_page' => 3, // 表示件数
+          ];
+          $my_query = new WP_Query($args);
+        ?>
+
+        <?php if ($my_query -> have_posts() ) : ?>
+          <!-- 投稿があったとき -->
+          <ol class="column-list">
+            <?php while ( $my_query -> have_posts() ) : $my_query -> the_post(); ?>
+              <li class="column-list-item">
+                <a href="<?php the_permalink(); ?>" class="column-list-link">
+                  <section class="column-list-inner">
+                    <div class="column-list-text-box">
+                      <h3><?php the_title(); ?></h3>
+                      <p class="column-list-date">
+                        <time datetime="<?php the_time( DATE_W3C ); ?>">
+                          <?php the_time( get_option( 'date_format' ) ); ?>
+                        </time>
+                      </p>
+                      <p class="category">カテゴリー</p>
+                    </div>
+                    <figure class="column-list-image">
+                      <?php if ( has_post_thumbnail() ) : ?>
+                        <!-- アイキャッチ画像があるとき -->
+                        <?php the_post_thumbnail(); ?>
+                      <?php else : ?>
+                        <!-- アイキャッチ画像がないとき -->
+                        <img src="<?php echo esc_url( get_theme_file_uri() ); ?>/src/img/no_image.png" alt="">
+                      <?php endif; ?>
+                    </figure>
+                  </section>
+                </a>
+              </li>
+            <?php endwhile; ?>
+          </ol>
+
+        <?php else : ?>
+          <!-- 投稿がなかったとき -->
+          <p>まだ投稿がありません。</p>
+
+        <?php endif; wp_reset_postdata(); ?>
+
         <p class="button-area">
-          <a href="#!" class="button">もっとみる</a>
+          <a href="/column/" class="button">もっとみる</a>
         </p>
 
         <section>
