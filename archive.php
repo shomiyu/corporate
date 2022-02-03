@@ -2,7 +2,7 @@
 
 <main class="main">
   <div class="heading-parallax heading-parallax--hammer">
-    <p class="heading-parallax-text">お知らせ一覧</p>
+    <h1 class="heading-parallax-text">お知らせ一覧</h1>
   </div>
 
   <div class="container">
