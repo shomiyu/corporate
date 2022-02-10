@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* ==================================
+  サイドバーのスタイル
+================================== */
+
+.sidebar-title {
+  display: block;
+  font-size: 1.25em;
+  border-top: 2px solid #2c2c2c;
+  border-bottom: 1px solid #2c2c2c;
+  padding: 0.2em 0;
+  margin-bottom: 0.5em;
+}
+
+.sidebar-list,
+.sidebar-list ul {
+  list-style: none;
+}
+
+.sidebar-list ul li {
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.sidebar-list ul li a {
+  display: block;
+  padding: 0.5em 0;
+}

@@ -196,6 +196,16 @@
   padding: 4em 0 3em;
 }
 
+.footer-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-column .sidebar-list {
+  width: 40%;
+}
+
 .copyright {
   text-align: center;
   padding: 1em 0;

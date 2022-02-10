@@ -21,7 +21,12 @@
           </div>
         </main>
 
-        <aside class="single-aside">サイドバー</aside>
+        <aside class="single-aside">
+          <h2 class="sidebar-title">カテゴリー</h2>
+          <ul class="sidebar-list">
+            <?php dynamic_sidebar( 'sidebar' ); ?>
+          </ul>
+        </aside>
       </div>
     </div>
   </div>

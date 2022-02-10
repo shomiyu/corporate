@@ -30,6 +30,7 @@ function add_files() {
         wp_css('project-common-css', '/src/css/common.css');
         wp_css('project-index-css', '/src/css/index.css');
         wp_css('project-single-css', '/src/css/single.css');
+        wp_css('project-sidebar-css', '/src/css/sidebar.css');
         wp_css('style', '/style.css');
         wp_web_font();
     }
