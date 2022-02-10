@@ -1,4 +1,13 @@
   <footer class="footer">
+    <?php
+      $args = [
+        'theme_location' => 'footer',
+        'menu_class' => 'menu',
+        'container' => false,
+      ];
+      wp_nav_menu( $args );
+    ?>
+
     <div class="footer-upper">
       <div class="container">
         <p class="footer-logo">

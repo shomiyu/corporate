@@ -16,17 +16,14 @@
       </h1>
 
       <nav class="global-menu">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#!">私たちについて</a>
-          </li>
-          <li class="menu-item">
-            <a href="#!">お知らせ</a>
-          </li>
-          <li class="menu-item">
-            <a href="#!">お問い合せ</a>
-          </li>
-        </ul>
+        <?php
+          $args = [
+            'theme_location' => 'global',
+            'menu_class' => 'menu',
+            'container' => false,
+          ];
+          wp_nav_menu( $args );
+        ?>
       </nav>
     </div>
   </header>
