@@ -24,7 +24,7 @@ function add_files() {
 
     // ダッシュボードまたは管理画面の表示中以外のときに適用
     if (!is_admin()) {
-        wp_script('project-js', '/src/js/main.js');
+        wp_enqueue_script('project-js', get_theme_file_uri() . '/src/js/main.js', ['jquery'], '1.0.0', true);
         wp_css('project-reset-css', '/src/css/reset.css');
         wp_css('project-base-css', '/src/css/base.css');
         wp_css('project-common-css', '/src/css/common.css');

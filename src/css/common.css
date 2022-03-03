@@ -27,9 +27,97 @@
   align-items: center;
 }
 
+.hamburger-button {
+  display: none;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.hamburger-line {
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s all ease-in-out;
+}
+
+.hamburger-line::before,
+.hamburger-line::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s all ease-in-out;
+}
+
+.hamburger-line::before {
+  top: -8px;
+}
+
+.hamburger-line::after {
+  top: 8px;
+}
+
+.is-active .hamburger-line {
+  background-color: transparent;
+}
+
+.is-active .hamburger-line::before {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.is-active .hamburger-line::after {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-button {
+    display: block;
+  }
+
+  .global-menu {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 64px);
+    top: 64px;
+    left: 0;
+    padding: 40px 0;
+    transform: translateX(100%);
+    transition: 0.3s all ease-in-out;
+  }
+
+  .is-active.global-menu {
+    display: block;
+    transform: translateX(0);
+  }
+}
+
 .menu {
   list-style: none;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
 }
 
 .menu-item a {

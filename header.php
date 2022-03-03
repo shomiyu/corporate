@@ -15,7 +15,13 @@
         </a>
       </h1>
 
-      <nav class="global-menu">
+      <button type="button" class="hamburger-button" id="js-button">
+        <span class="hamburger-line">
+          <span class="screen-reader-text">メニューを開く</span>
+        </span>
+      </button>
+
+      <nav class="global-menu" id="js-menu">
         <?php
           $args = [
             'theme_location' => 'global',
